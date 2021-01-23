@@ -221,7 +221,10 @@ static Key keys[] = {
 	/* { MODKEY,			XK_c,		spawn,		SHCMD("") }, */
 	/* { MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("") }, */
 	/* V is automatically bound above in STACKKEYS */
-	{ MODKEY,			XK_b,		togglebar,	{0} },
+	// togglebar corrupts the tray part of polybar a littel. so in polybar i will use the 
+	// builtin toggle command to avoid this:
+	//{ MODKEY,			XK_b,		togglebar,	{0} },
+	{MODKEY, 			XK_b, 		spawn, 		SHCMD("polybar-msg cmd toggle")},
 	/* { MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("") }, */
 	//{ MODKEY,			XK_n,		spawn,		SHCMD(TERMINAL " -e nvim -c VimwikiIndex") },
 	//{ MODKEY|ShiftMask,		XK_n,		spawn,		SHCMD(TERMINAL " -e newsboat; pkill -RTMIN+6 dwmblocks") },
