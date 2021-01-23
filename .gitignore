@@ -9,3 +9,5 @@ dwm.o
 drw.o
 .cache
 compile_commands.json
+dwm-msg
+dwm-msg.o
