@@ -36,3 +36,7 @@ Users of Arch-based distros can also install it from the AUR as [dwm-luke-git](h
 ## Please install `libxft-bgra`!
 
 This build of dwm does not block color emoji in the status/info bar, so you must install [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) from the AUR, which fixes a libxft color emoji rendering problem, otherwise dwm will crash upon trying to render one. Hopefully this fix will be in all libxft soon enough.
+
+## Notes:
+
+	1.2021-01-24 03:40: I use polybar-dwm-module instead of the original repo of polybar. it is adapted fork of polybar for using with dwm.
